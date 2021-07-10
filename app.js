@@ -1,6 +1,6 @@
 const countDownTimer = () => {
-  const countDate = new Date('July 21,2021');
-  const currentDate = new Date();
+  const countDate = new Date('July 21,2021').getTime();
+  const currentDate = new Date().getTime();
   const time = countDate - currentDate;
 
   const pad = value => {
